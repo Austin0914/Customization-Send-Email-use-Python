@@ -18,12 +18,19 @@
 
 ## 取得Google 應用程式密碼
 1. 管理你的google帳號
+
  ![](https://i.imgur.com/0T2JxxX.png)
+ 
 2. 安全性>雙步驗證(開啟)
+
 ![](https://i.imgur.com/bDYPRnu.png)
+
 3. 應用程式密碼>產生
+
 ![](https://i.imgur.com/v4s27uc.png)
+
 4. 取得密碼(圖片密碼無效!)
+
 ![](https://i.imgur.com/3y15VsB.png)
 
 
