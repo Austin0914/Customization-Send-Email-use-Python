@@ -44,7 +44,7 @@
 ## 使用方法
 
 ### 讀取excel
-```python=
+```python
 df = pd.read_excel(io.BytesIO(uploaded['test.xlsx']))
 arr = df[df['mail'] != " " ]
 arr = arr.fillna("")
@@ -54,7 +54,7 @@ L1:讀取excel資料
 L2:如果mail不是空的就讀去資料
 備註::讀取資料為google colab寫法
 ### 設定SMTP伺服器
-```python=
+```python
 server = smtplib.SMTP(host="smtp.gmail.com", port="587")
 server.ehlo()                               # 驗證SMTP伺服器
 server.starttls()                             # 建立加密傳輸
@@ -76,10 +76,10 @@ L4:寄送者信箱/google應用程式密碼
 * 區域：div, span
 * 表格：table, tr, th, td
 * 表單：form, label, input
-:::success
-要替換的參數前面放 $變數
-:::
-```htmlembedded=
+
+`要替換的參數前面放 $變數`
+
+```html
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -95,11 +95,11 @@ L4:寄送者信箱/google應用程式密碼
 </html>
 ```
 ### 讀取html
-```python=
+```python
 template = Template(Path("mail.html").read_text())
 ```
 ### 個別寄信
-```python=
+```python
 for index, row in arr.iterrows():
         getReceiveCols = row['Name'], row['mail'], row['account'], row['password']   
         content = MIMEMultipart()                             
