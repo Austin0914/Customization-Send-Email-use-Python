@@ -55,9 +55,9 @@ arr = df[df['mail'] != " " ]
 arr = arr.fillna("")
 print(arr)
 ```
-L1:讀取excel資料
-L2:如果mail不是空的就讀去資料
-備註::讀取資料為google colab寫法
+L1:讀取excel資料  
+L2:如果mail不是空的就讀去資料  
+備註:讀取資料為google colab寫法  
 ### 設定SMTP伺服器
 ```python
 server = smtplib.SMTP(host="smtp.gmail.com", port="587")
@@ -65,7 +65,7 @@ server.ehlo()                               # 驗證SMTP伺服器
 server.starttls()                             # 建立加密傳輸
 server.login("clcp-team@gs.clhs.tyc.edu.tw", "bnykmqdznlkvqnhx") 
 ```
-L1、2、3:伺服器設定(固定)
+L1、2、3:伺服器設定(固定)  
 L4:寄送者信箱/google應用程式密碼
 ### html 內文撰寫
 因為是信件head不用寫
@@ -121,13 +121,13 @@ for index, row in arr.iterrows():
             receiverList.append(getReceiveCols[1])
             print("Sent to " + getReceiveCols[1])
 ```
-L1:執行n次寄送信件
-L2:讀取excel檔第一行資訊(標籤)
-L3:建立MIMEMultipart物件
-L4:信件標題
-L5:寄件者信箱
-L6:收件者gmail
-L11:替換相關參數
+L1:執行n次寄送信件  
+L2:讀取excel檔第一行資訊(標籤)  
+L3:建立MIMEMultipart物件  
+L4:信件標題  
+L5:寄件者信箱  
+L6:收件者gmail  
+L11:替換相關參數  
 L13:寄送
 
 
