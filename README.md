@@ -47,7 +47,12 @@
 ![](https://i.imgur.com/Jn9Vdwp.png)
 
 ## 使用方法
-
+### 上傳檔案(Google Colab)
+```python
+from google.colab import files
+# 上傳圖片內文檔案
+uploaded = files.upload()
+```
 ### 讀取excel
 ```python
 df = pd.read_excel(io.BytesIO(uploaded['test.xlsx']))
